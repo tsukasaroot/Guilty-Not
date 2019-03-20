@@ -3,6 +3,7 @@ define Marie = Character("Marie")
 define Girl1 = Character("Fille 1")
 define Girl2 = Character("Fille 2")
 define Girl3 = Character("Fille 3")
+define Prof = Character("Professeur")
 define Groupe = Character("Groupe")
 
 label initialize:
@@ -196,4 +197,19 @@ label back_class:
             "Je lui réponds en ignorant sa question."
             MC "Essayons quand même."
             $friend-=1
+    "*Toc toc*"
+    Prof "Bonjour."
+    "Le professeur nous accueillit, à part lui la salle était vide."
+    MC "On a un petit problème... on aurait besoin de conseils..."
+    Prof "Oh ? Je vous écoute."
+    MC "Eh bien voilà, Marie, se fait harceler, et rackettée. Tout ça par un groupe de fille de notre classe."
+    MC "Et de ce que j'en ai compris, elles font ça principalement parce qu'elle a un peu de poids !"
+    Prof "Mmh. Eh bien, ça arrive dans toutes les écoles. Bien sûr je ne cautionne pas ça. Mais ça s'arrêtera tout seul."
+    Marie "..."
+    MC "Et dans combien de temps ? Elle n'a pas à subir ça une fois de plus..."
+    Prof "Ecoutez, [MC], Marie. La vie est faite ainsi, il faut juste apprendre à ignorer ces choses et ne pas provoquer ce genre de personnes malhonnêtes."
+    "J'ai l'impression qu'on ne tirera pas grand chose de plus."
+    MC "Je vois. Merci pour vos précieux conseils, au revoir."
+    Marie "Au revoir..."
+    "On est repartis en direction de la salle de classe, sans même attendre une réponse de sa part."
     return
