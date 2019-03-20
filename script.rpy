@@ -3,6 +3,7 @@ define Marie = Character("Marie")
 define Girl1 = Character("Fille 1")
 define Girl2 = Character("Fille 2")
 define Girl3 = Character("Fille 3")
+define Groupe = Character("Groupe")
 
 label initialize:
     $MCname = renpy.input("Entrez votre nom:").strip()
@@ -118,18 +119,24 @@ label Marie_path:
         "Manger dans la salle":
             $friend+=1
             "Il fait beaucoup trop chaud pour manger dehors, je décide donc de retourner dans la salle de classe."
+    jump back_class
+
+label follow_her:
+    "En arrivant dans l'arrière cours, Marie se retourna. l'air effayée."
+    Marie "Ex-excuse moi, tu peux me laisser ? Je préfère rester seule."
+    MC "Je voulais juste qu'on discute un peu, après ce qu'il s'est passé ce matin..."
+    Marie "..."
+    "Elle semble se renfermer encore plus sur elle-même."
+    MC "Du coup, tu veux pas en parler ?"
+    Marie "..."
+    "Hum, j'ai l'impression que je m'y suis mal prise. Je ferai mieux de la laisser et d'aller manger."
+    MC "On se revoit en classe, à toute."
+    jump back_class
+
+label back_class:
     scene black
     with dissolve
     scene bg classroom
-    return
-
-    label follow_her:
-        "En arrivant dans l'arrière cours, Marie se retourna. l'air effayée."
-        Marie "Ex-excuse moi, tu peux me laisser ? Je préfère rester seule."
-        MC "Je voulais juste qu'on discute un peu, après ce qu'il s'est passé ce matin..."
-        Marie "..."
-        "Elle semble se renfermer encore plus sur elle-même."
-        MC "Du coup, tu veux pas en parler ?"
-        Marie "..."
-        "Hum, j'ai l'impression que je m'y suis mal prise. Je ferai mieux de la laisser et d'aller manger."
-        MC "On se revoit en classe, à toute."
+    "Au final, j'ai mangé avec un groupe composé de garçons et de filles."
+    MC "Ouf, j'ai trop mangé. Je vais marcher un peu pour digérer. A plus tard !"
+    Groupe "A toute !"
