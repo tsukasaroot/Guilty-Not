@@ -547,7 +547,7 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("A propos"), scroll="viewport"):
 
         style_prefix "about"
 
@@ -595,7 +595,7 @@ screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use file_slots(_("Charger"))
 
 
 screen file_slots(title):
@@ -717,7 +717,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Paramètres"), scroll="viewport"):
 
         vbox:
 
@@ -976,7 +976,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Aide"), scroll="viewport"):
 
         style_prefix "help"
 
@@ -1002,71 +1002,71 @@ screen help():
 screen keyboard_help():
 
     hbox:
-        label _("Enter")
-        text _("Advances dialogue and activates the interface.")
+        label _("Entrer")
+        text _("Avance les dialogues et active les actions.")
 
     hbox:
         label _("Space")
-        text _("Advances dialogue without selecting choices.")
+        text _("Avance les dialogues sans saisir les choix.")
 
     hbox:
-        label _("Arrow Keys")
-        text _("Navigate the interface.")
+        label _("Touches fléchés")
+        text _("Navigate dans les menus.")
 
     hbox:
-        label _("Escape")
-        text _("Accesses the game menu.")
+        label _("Echappe")
+        text _("Accéder au menu du jeu.")
 
     hbox:
         label _("Ctrl")
-        text _("Skips dialogue while held down.")
+        text _("Passe les dialogues tant que la touche est maintenue.")
 
     hbox:
         label _("Tab")
-        text _("Toggles dialogue skipping.")
+        text _("Active l'avance rapide.")
 
     hbox:
         label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
+        text _("Affiche les textes passé.")
 
     hbox:
         label _("Page Down")
-        text _("Rolls forward to later dialogue.")
+        text _("Affiche les textes récent.")
 
     hbox:
         label "H"
-        text _("Hides the user interface.")
+        text _("Cache l'interface.")
 
     hbox:
         label "S"
-        text _("Takes a screenshot.")
+        text _("Prendre une capture d'écran.")
 
     hbox:
         label "V"
-        text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
+        text _("Active l'assistant vocal {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
 
 
 screen mouse_help():
 
     hbox:
-        label _("Left Click")
-        text _("Advances dialogue and activates the interface.")
+        label _("Clic gauche")
+        text _("Avance les dialogues et active les actions.")
 
     hbox:
-        label _("Middle Click")
-        text _("Hides the user interface.")
+        label _("Clic du milieu")
+        text _("Cache l'interface.")
 
     hbox:
-        label _("Right Click")
-        text _("Accesses the game menu.")
+        label _("Clic droit")
+        text _("Accéder au menu du jeu.")
 
     hbox:
-        label _("Mouse Wheel Up\nClick Rollback Side")
-        text _("Rolls back to earlier dialogue.")
+        label _("Molette haut\nTouche de côté")
+        text _("Affiche les textes passé.")
 
     hbox:
-        label _("Mouse Wheel Down")
-        text _("Rolls forward to later dialogue.")
+        label _("Molette bas")
+        text _("Affiche les textes récent.")
 
 
 screen gamepad_help():
@@ -1077,7 +1077,7 @@ screen gamepad_help():
 
     hbox:
         label _("Left Trigger\nLeft Shoulder")
-        text _("Rolls back to earlier dialogue.")
+        text _("Affiche les textes passé.")
 
     hbox:
         label _("Right Shoulder")
