@@ -58,7 +58,9 @@ label begin:
         "S'approcher":
             jump Marie_path
         "Continuer son chemin":
-            jump keep_walking
+            $inactive=1
+    "Bah, après tout je suis déjà juste au niveau temps, je n'ai pas de temps à perdre."
+    return
 
 label Marie_path:
     Girl1 "Alors ? Tu me donnes ces 20 euros ou tu comptes t'empiffrer ce midi ?"
@@ -83,13 +85,10 @@ label Marie_path2:
     MC "Ah, c'est l'heure, on ferait mieux de pas être en retard pas vrai ?"
     Girl2 "Partons, on s'en occupera plus tard."
     "Tandis que le groupe de fille se rend dans l'enceinte du lycée, Marie les suit de loin, trainant des pieds et regardant le sol."
+    "J'ai tenté de m'approcher d'elle, mais elle a subitement accéléré le rythme."
     "Ce début d'année commence bien..."
     scene black
     with dissolve
     scene bg classroom
     "Après une dizaines de minutes, je suis enfin arrivée dans la salle de classe."
-    return
-
-label keep_walking:
-    "test2"
     return
