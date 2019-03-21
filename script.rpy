@@ -6,6 +6,14 @@ define Girl3 = Character("Fille 3")
 define Prof = Character("Professeur")
 define Groupe = Character("Groupe")
 
+define audio.hero = [ "<loop 1>" "sounds/Heros.mp3" ]
+define audio.homering = "sounds/homering.wav"
+define audio.everydaylife = [ "<loop 1>" "sounds/everydaylife.mp3" ]
+define audio.schoolring = [ "<loop 0>" "sounds/schoolring.mp3" ]
+define audio.lycee = [ "<from 1 to 4>" "sounds/lyceetheme.mp3" ]
+define audio.doorknock = [ "<from 1.0 to 9.0>" "sounds/door knock.wav" ]
+define audio.suicidal = [ "<loop 6>" "sounds/suicidal.mp3" ]
+
 label initialize:
     $MCname = renpy.input("Entrez votre nom:").strip()
 
@@ -43,10 +51,13 @@ label start:
     jump initialize
 
 label begin:
-    play music [ "<loop 1>" "songs/everydaylife.mp3" ] fadein 1.0
+    play music everydaylife fadein 1.0
+    show text "Jour 1" with dissolve
+    pause(1)
+    hide text with dissolve
     scene bg bedroom with dissolve
 
-    play sound "songs/homering.wav"
+    play sound homering
     "*Dring Dring* ... *Dring Dring*"
     stop sound fadeout 1.0
 
@@ -62,13 +73,15 @@ label begin:
     #voice "p4"
     "L'une d'elles en particulier, retient mon attention."
     #voice "p5"
+    show marie normal at left
     "Tiens ? Sa tête me dit quelque chose... ça ne serai pas Marie ? On habitait a côté quand on était petites je crois."
     #voice "p6"
-    "Quand aux autres filles, je ne les reconnaissaient pas. Elles ont l'air agitées, je me demande ce qu'elles lui veulent... "
+    "Quand aux autres filles, je ne les reconnait pas. Elles ont l'air agitées, je me demande ce qu'elles lui veulent... "
     #voice "p7"
-    "J'ai donc décidée de m'approcher."
+    "Je décide donc de m'approcher."
     scene black with dissolve
     scene bg lycee
+    show marie normal at left
     #voice "p8"
     Girl1 "Alors ? Tu me les donnes ces 20 euros ? Ou tu comptes tout dépenser ce midi pour t'empiffrer ?"
     #voice "p9"
@@ -80,8 +93,6 @@ label begin:
     #voice "p12"
     "Peut être que je devrais calmer un peu la situation... ?"
     menu:
-        #voice "c1"
-        #voice "c2"
         # marie path amène sur la route de marie
         "Tenter de s'interposer":
             jump Marie_path
@@ -103,7 +114,7 @@ label Marie_path:
     "Elle s'approche de moi, menaçante."
     #voice "p18"
     MC "Je ne voulais pas déranger, haha..."
-    play sound [ "<loop 0>" "songs/schoolring.mp3" ]
+    play sound schoolring
     pause(1)
     #voice "p19"
     MC "Ah, c'est l'heure, on ferait mieux de pas être en retard pas vrai ?"
@@ -113,13 +124,14 @@ label Marie_path:
     "Tandis que le groupe de fille se rend dans l'enceinte du lycée, Marie les suit de loin, trainant des pieds et regardant le sol."
     #voice "p22"
     "J'ai tenté de m'approcher d'elle, mais elle a subitement accéléré le rythme."
+    hide marie normal
     #voice "p23"
     "Ce début d'année commence bien..."
     stop music fadeout 1.0
     scene black with dissolve
     scene bg classroom
-    $renpy.music.set_volume(0.2, channel='music')
-    play music [ "<loop 1>" "songs/lyceetheme.mp3" ] fadein 1.0
+    $renpy.music.set_volume(0.3, channel='music')
+    play music lycee fadein 1.0
     "Après une dizaines de minutes, je suis enfin arrivée dans la salle de classe."
     "Tiens, il n'y a pas beaucoup de filles. J'aurai peut-être l'occasion de me trouver un petit copain dès le début de l'année !"
     "En entrant dans la salle de classe, j'ai remarqué Marie toute seule au fond."
@@ -129,11 +141,11 @@ label Marie_path:
     "Ahah, totalement ignorée..."
     scene black with dissolve
     scene bg lycee
-    play sound [ "<loop 0>" "songs/schoolring.mp3" ]
+    play sound schoolring
     pause(1)
     "L'heure de pause."
     MC "Ah Marie, attends."
-    Marie "Elle s'arrêta un instant, puis continua son chemin."
+    "Elle s'arrêta un instant, puis continua son chemin."
     menu:
         "La suivre":
             $friend-=1
@@ -144,6 +156,7 @@ label Marie_path:
     jump back_class
 
 label follow_her:
+    show marie normal at left
     "En arrivant dans l'arrière cours, Marie se retourna. l'air effayée."
     Marie "Ex-excuse moi, tu peux me laisser ? Je préfère rester seule."
     MC "Je voulais juste qu'on discute un peu, après ce qu'il s'est passé ce matin..."
@@ -153,6 +166,7 @@ label follow_her:
     Marie "..."
     "Hum, j'ai l'impression que je m'y suis mal prise. Je ferai mieux de la laisser et d'aller manger."
     MC "On se revoit en classe, à toute."
+    hide marie normal
     jump back_class
 
 label back_class:
@@ -165,22 +179,28 @@ label back_class:
     scene bg lycee
     "Pendant ma balade digestive dans l'enceinte du lycée, j'entends des voix provenant de derrière un pilier."
     "Je prends le risque de m'approcher..."
-    "... Comme je pensais, cette voix me disait quelque chose. C'est Marie, entourée par les filles de ce matin."
-    "L'une d'elle remarque ma présence."
+    "... Comme je pensais, cette voix me disait quelque chose. C'est Marie, entourée par le groupe de ce matin."
+    show marie tear 2 at left
+    "Son visage semble impassible, mais en l'observant attentivement, je remarque une larme qui coule sur sa joue."
+    "L'une des filles remarque ma présence."
     Girl3 "Encore toi ? Qu'est-ce que tu nous veux ?"
     Girl2 "Ah je sais ! Tu vas payer à sa place !"
     Girl1 "Allez raboule l'argent."
     MC "Arrêtez ça ! Sinon je vais devoir en parler à un professeur."
     Girl1 "Haha, c'est quoi cette chouineuse ?"
+    hide marie tear 2
     "Je prends Marie par la main, puis la tire en direction de notre classe."
     Girl2 "C'est ça, enfuis-toi ! On se chargera de toi en même temps que ta grosse pote."
-    Girl3 "On verra si tu protègeras cette baleine pour longtemps."
+    Girl3 "On verra si tu protègeras cette baleine pour longtemps !"
+    scene black with dissolve
+    scene bg classroom
     "En arrivant devant la salle de classe, Marie retira brusqement sa main."
     "Elle rentre dans la salle sans se retourner, j'ai cependant cru entendre un léger murmure..."
+    show marie normal
     Marie "... Merci."
     menu:
         "Je suis là si tu veux en parler":
-            MC "pas forcément maintenant, mais plus tard, dans un cion tranquille, ça t'irait ?"
+            MC "Pas forcément maintenant, mais plus tard, dans un coin tranquille, ça t'irait ?"
             Marie "Oh j'ai l'habitude de tout ça."
             MC "Dis pas ça ! Tu mérites d'être respecté !"
             Marie "On n'est pas obligé..."
@@ -197,19 +217,31 @@ label back_class:
             "Je lui réponds en ignorant sa question."
             MC "Essayons quand même."
             $friend-=1
+    hide marie normal
+    scene black with dissolve
+    scene bg classroom with dissolve
+    $renpy.sound.set_volume(0.6, channel='sound')
+    play sound doorknock
     "*Toc toc*"
+    pause(2)
     Prof "Bonjour."
-    "Le professeur nous accueillit, à part lui la salle était vide."
+    $renpy.sound.set_volume(0.2, channel='sound')
+    "Le professeur est venu nous ouvrir la porte, à part lui la salle est vide."
     MC "On a un petit problème... on aurait besoin de conseils..."
     Prof "Oh ? Je vous écoute."
-    MC "Eh bien voilà, Marie, se fait harceler, et rackettée. Tout ça par un groupe de fille de notre classe."
+    MC "Eh bien voilà, Marie, se fait harceler, et racketter. Tout ça par un groupe de fille de notre classe."
     MC "Et de ce que j'en ai compris, elles font ça principalement parce qu'elle a un peu de poids !"
     Prof "Mmh. Eh bien, ça arrive dans toutes les écoles. Bien sûr je ne cautionne pas ça. Mais ça s'arrêtera tout seul."
     Marie "..."
     MC "Et dans combien de temps ? Elle n'a pas à subir ça une fois de plus..."
     Prof "Ecoutez, [MC], Marie. La vie est faite ainsi, il faut juste apprendre à ignorer ces choses et ne pas provoquer ce genre de personnes malhonnêtes."
-    "J'ai l'impression qu'on ne tirera pas grand chose de plus."
+    "J'ai l'impression qu'on n'en tirera pas grand chose de plus."
     MC "Je vois. Merci pour vos précieux conseils, au revoir."
     Marie "Au revoir..."
     "On est repartis en direction de la salle de classe, sans même attendre une réponse de sa part."
-    return
+    "Le reste de l'après-midi fut calme et cette journée se termina sans aucun autre évènement."
+    play sound schoolring
+    scene black with dissolve
+    pause(2)
+    stop sound
+    jump day2
