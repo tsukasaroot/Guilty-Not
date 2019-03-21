@@ -96,7 +96,54 @@ label day2:
 label save_her:
     scene black with dissolve
     scene bg roof
-    ""
+    "Je me suis donc rendu sur le toit."
+    "Elle était là, regardant au loin, proche du rebord."
+    MC "Marie ! Hé..."
+    Marie "..."
+    menu:
+        "Tenter de la raisonner":
+            if $inactivity == 0:
+                MC "Ecoute... on devrait parler..."
+                Marie "... Il n'y a pas grand chose à dire..."
+                MC "Je suis sûre que c'est dur pour toi. Et avec ce que tu as dit tout à l'heure..."
+                MC "Tu vivais ça aussi dans ton ancienne école, c'est ça ?"
+                Marie "Ca va faire deux ans..."
+                MC "Je vois... mais là, c'est différent. Tu m'as moi, si on reste toute les deux, elles ne s'en prendront plus à toi."
+                Marie "Elles attendront juste que tu aies le dos tourné."
+                MC "Non, ne t'en fais pas, on trouvera quelque chose sur le long terme."
+                "Marie semble hésitante. Je m'assois sur le sol, contre le mur proche de la porte."
+                MC "Tu devrais rentrer chez toi non ? Tu dois être fatiguée. On a cours de sport demain."
+                Marie "Ah, c'est vrai..."
+                "J'ai l'impression qu'elle est plus calme, et que peut-être, elle commence à me faire confiance."
+                Marie "Bouh... Snif..."
+                "Puis d'un seul coup, en marchant en direction de la porte, elle se mit à pleurer."
+        "Tenter de s'approcher":
+                "Je commence à avancer dans sa direction."
+                Marie "Reste où tu es !"
+                Marie "J'en ai marre !"
+                Marie "Déjà dans mon ancien lycée, ça se passait comme ça..."
+                MC "... Tout va bien."
+                "Je fis un autre pas en avant. Marie quand à elle recula lentement."
+                Marie "Ne mens pas ! Je me souviens de toi, on était au collège ensemble."
+                Marie "Mais quand je suis partie, c'est comme toute les autres, tu m'as oubliée !"
+                MC "Je..."
+                "Je commence à paniquer."
+                "Je ne sais pas quoi lui répondre."
+                "Ni comment l'aider. Je pensais que s'approcher d'elle serait suffisant."
+                MC "On parlera de ça plus tard, d'accord ? Pour l'instant tu ferais mieux de t'éloigner !"
+                "Je fais un autre pas en avant, en ouvrant les bras, comme pour l'enlacer."
+                "Mais, Marie fit un mouvement de rejet en arrière..."
+                "Je la vois, disparaître lentement de mon champ de vision..."
+                "*Pouf*"
+                scene bg roof with vpunch
+                scene bg roof with hpunch
+                MC "Hein.. !?"
+                MC "Hah... non... quoi... ?"
+                MC "... Marie... ?"
+                scene bg roof with vpunch
+                scene bg roof with hpunch
+                "Je n'osais même pas m'approcher du rebord, ayant trop peur de tomber à mon tour."
+                jump badending
     return
 
 label bad_end1:
@@ -119,16 +166,25 @@ label bad_end1:
     MC "... Marie... ?"
     scene bg lycee with vpunch
     scene bg lycee with hpunch
+    jump badending
+
+label badending:
+    scene black with dissolve
+    scene bg street
     "Effrayée, je m'enfuie."
+    "Je traverse la rue à toute vitesse."
     "Je cours en direction de ma maison."
-    "Puis je m'enferme dans ma chambre..."
+    scene black with dissolve
+    scene bg bedroom
+    "Une fois dans la maison, je monte en vitesse dans ma chambre."
+    "Puis je m'y m'enferme..."
     scene black with dissolve
     "J'ai foirée quelque part..."
     "Je l'ai pas assez aidée..."
     "J'aurai dû faire plus attention..."
     "Je mérite pas de vivre non plus..."
     stop music fadeout 2.0
-    show text "{color=#f00}Bad end..." with dissolve
+    show text "{color=#f00}Fin..." with dissolve
     pause(2)
     hide text with dissolve
     return
