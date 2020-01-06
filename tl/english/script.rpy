@@ -4,271 +4,271 @@
 translate english begin_72079dfe:
 
     # "*Dring Dring* ... *Dring Dring*"
-    ""
+    "*Dring Dring* ... *Dring Dring*"
 
 # game/script.rpy:63
 translate english begin_a20cefa7:
 
     # "..."
-    ""
+    "..."
 
 # game/script.rpy:65
 translate english begin_07eca736:
 
     # "Premier jour de lycée, et je me lève déjà en retard."
-    ""
+    "It's my first day of school, and I am already late."
 
 # game/script.rpy:67
 translate english begin_ed4be494:
 
     # "Je me prépare rapidement, enfile mes chaussures, puis me mets à courir en direction du lycée."
-    ""
+    "I prepare myself, put my shoes one, then rush toward the college."
 
 # game/script.rpy:71
 translate english begin_8258d724:
 
     # "Pas loin du portail de l'école, je croise un groupe de jeunes lycéennes, semblant avoir mon âge."
-    ""
+    "Not far from the gate, I meet a group of girls."
 
 # game/script.rpy:73
 translate english begin_cff09e49:
 
     # "L'une d'elles en particulier, retient mon attention."
-    ""
+    "One of them, particularly, caught my eyes."
 
 # game/script.rpy:77
 translate english begin_b4fe3973:
 
     # "Tiens ? Sa tête me dit quelque chose... ça ne serai pas Marie ? On habitait a côté quand on était petites je crois."
-    ""
+    "Oh? She remind me someone... Isn't it Marie? We were neighboor when kids."
 
 # game/script.rpy:79
 translate english begin_341bc22f:
 
     # "Quand aux autres filles, je ne les reconnait pas. Elles ont l'air agitées, je me demande ce qu'elles lui veulent... "
-    ""
+    "Though, I don't know who the other girls are. They look extatic, I wonder what they want from her..."
 
 # game/script.rpy:81
 translate english begin_54abd225:
 
     # "Je décide donc de m'approcher."
-    ""
+    "I decide to come closer."
 
 # game/script.rpy:87
 translate english begin_3648715f:
 
     # Girl1 "Alors ? Tu me les donnes ces 20 euros ? Ou tu comptes tout dépenser ce midi pour t'empiffrer ?"
-    Girl1 ""
+    Girl1 "So? You give me those 20 dollars? Or you plan to use it all for your whale stomach?"
 
 # game/script.rpy:89
 translate english begin_5349f3ae:
 
     # Girl2 "Ouais ouais, on en a besoin nous, comment on va sortir ce soir sans cet argent ?"
-    Girl2 ""
+    Girl2 "Yeah! We need it, how will we go out tonight without your help?"
 
 # game/script.rpy:91
 translate english begin_a48c5b3a:
 
     # Girl3 "J'avoue, et puis t'as pas vraiment besoin de manger hein, hahaha."
-    Girl3 ""
+    Girl3 "Sure, and not like you need to eat right? You got plenty of reserve already! Hahaha."
 
 # game/script.rpy:93
 translate english begin_4dcd9742:
 
     # "Le groupe de fille se mit à rire en choeur."
-    ""
+    "The group start to laugh in chore."
 
 # game/script.rpy:95
 translate english begin_2b113958:
 
     # "Peut être que je devrais calmer un peu la situation... ?"
-    ""
+    "Maybe I should calm them down... ?"
 
 # game/script.rpy:102
 translate english begin_dbec0345:
 
     # Girl1 "Ben alors, t'as perdu ta langue ?"
-    Girl1 ""
+    Girl1 "So what? You lost your tongue?"
 
 # game/script.rpy:103
 translate english begin_d976c97c:
 
     # Girl2 "En plus d'être grosse tu sais plus parler ?"
-    Girl2 ""
+    Girl2 "Beside being a whale you lost ability to speak now?"
 
 # game/script.rpy:104
 translate english begin_b9d45005:
 
     # "Encore une fois, elles se mettent à rire..."
-    ""
+    "Once more, they started to laugh..."
 
 # game/script.rpy:105
 translate english begin_fb859d1e:
 
     # "L'une d'elle se met à tapoter de plus en plus fort l'épaule de Marie."
-    ""
+    "One of them was hitting harder Marie's shoulder as time pass."
 
 # game/script.rpy:106
 translate english begin_a20cefa7_1:
 
     # "..."
-    ""
+    "..."
 
 # game/script.rpy:111
 translate english Marie_path_ead622d1:
 
     # MC "Excusez-moi..."
-    MC ""
+    MC "Excuse me..."
 
 # game/script.rpy:113
 translate english Marie_path_1d30db4b:
 
     # Girl1 "Oui ? On est en pleine discussion avec notre amie. Tu peux nous laisser ?"
-    Girl1 ""
+    Girl1 "Yes? We are in middle of discussion with our friend. Can you not bother us?"
 
 # game/script.rpy:115
 translate english Marie_path_4048f153:
 
     # MC "Je n'ai pas l'impression qu'elle apprécie cette conversation... Ni qu'elle souhaite vous prêter ces 20 euros."
-    MC ""
+    MC "She doesn't seem to like it... Neither give you this money."
 
 # game/script.rpy:117
 translate english Marie_path_305dd068:
 
     # Girl1 "Et ? C'est pas tes affaires, à moins que tu ne veuilles partager l'addition avec cette truie ?"
-    Girl1 ""
+    Girl1 "And? Not your business, unless you'd like to share the bill with this shithead?"
 
 # game/script.rpy:119
 translate english Marie_path_64600b0b:
 
     # "Elle s'approche de moi, menaçante."
-    ""
+    "The group leader come close to me, threatening."
 
 # game/script.rpy:121
 translate english Marie_path_2f601753:
 
     # MC "Je ne voulais pas déranger, haha..."
-    MC ""
+    MC "I didn't wanted to bother, haha..."
 
 # game/script.rpy:125
 translate english Marie_path_972c4b4a:
 
     # MC "Ah, c'est l'heure, on ferait mieux de pas être en retard pas vrai ?"
-    MC ""
+    MC "Oh, it's time, better not be late right?"
 
 # game/script.rpy:127
 translate english Marie_path_503c5f76:
 
     # Girl2 "Partons, on s'en occupera plus tard."
-    Girl2 ""
+    Girl2 "Let's go, we can finish this later."
 
 # game/script.rpy:129
 translate english Marie_path_4011416b:
 
     # "Tandis que le groupe de fille se rend dans l'enceinte du lycée, Marie les suit de loin, trainant des pieds et regardant le sol."
-    ""
+    "While the group is heading to the college gate, Marie follow them from far, head down the ground."
 
 # game/script.rpy:131
 translate english Marie_path_81202bbb:
 
     # "J'ai tenté de m'approcher d'elle, mais elle a subitement accéléré le rythme."
-    ""
+    "I try to walk by her side, but she suddenly move faster."
 
 # game/script.rpy:134
 translate english Marie_path_829db85d:
 
     # "Ce début d'année commence bien..."
-    ""
+    "Nice start..."
 
 # game/script.rpy:140
 translate english Marie_path_e87d1a02:
 
     # "Après une dizaines de minutes, je suis enfin arrivée dans la salle de classe."
-    ""
+    "After a dozen of minutes, I finally got infront classroom."
 
 # game/script.rpy:141
 translate english Marie_path_9eed6514:
 
     # "Tiens, il n'y a pas beaucoup de filles. J'aurai peut-être l'occasion de me trouver un petit copain dès le début de l'année !"
-    ""
+    "Seems like there's not much girls. Maybe I have a chance to get a boyfriend soon!"
 
 # game/script.rpy:142
 translate english Marie_path_c1c11528:
 
     # "En entrant dans la salle de classe, j'ai remarqué Marie toute seule au fond."
-    ""
+    "By entering, I also noticed Marie, sitting alone in the back."
 
 # game/script.rpy:143
 translate english Marie_path_80a468b5:
 
     # "Je me suis donc assise à la place d'à côté."
-    ""
+    "So I took a place close to her."
 
 # game/script.rpy:144
 translate english Marie_path_e414a835:
 
     # MC "Salut !"
-    MC ""
+    MC "Hey !"
 
 # game/script.rpy:145
 translate english Marie_path_752e87ac:
 
     # Marie "..."
-    Marie ""
+    Marie "..."
 
 # game/script.rpy:146
 translate english Marie_path_79ff9106:
 
     # "Ahah, totalement ignorée..."
-    ""
+    "Ahah, got ignored..."
 
 # game/script.rpy:151
 translate english Marie_path_47fe7f3f:
 
     # "L'heure de pause."
-    ""
+    "Break time."
 
 # game/script.rpy:152
 translate english Marie_path_cae91f85:
 
     # MC "Ah Marie, attends."
-    MC ""
+    MC "Ah, Marie, wait."
 
 # game/script.rpy:153
 translate english Marie_path_b5494eb5:
 
     # "Elle s'arrêta un instant, puis continua son chemin."
-    ""
+    "She slightly slow down, but kept walking out of the room."
 
 # game/script.rpy:160
 translate english Marie_path_1e90f78c:
 
     # "Il fait beaucoup trop chaud pour manger dehors, je décide donc de retourner dans la salle de classe."
-    ""
+    "It is way too hot to eat outside. I prefer to stay in the classroom."
 
 # game/script.rpy:166
 translate english follow_her_25c972c2:
 
     # "En arrivant dans l'arrière cours, Marie se retourna. l'air effayée."
-    ""
+    "After getting in back court, Marie turned back, with a scared looking face."
 
 # game/script.rpy:167
 translate english follow_her_bf0673f3:
 
     # Marie "Ex-excuse moi, tu peux me laisser ? Je préfère rester seule."
-    Marie ""
+    Marie "Ex-excuse me, can you leave me ? I prefer staying alone."
 
 # game/script.rpy:168
 translate english follow_her_dca677c8:
 
     # MC "Je voulais juste qu'on discute un peu, après ce qu'il s'est passé ce matin..."
-    MC ""
+    MC "I just wanted to discuss about this morning..."
 
 # game/script.rpy:169
 translate english follow_her_752e87ac:
 
     # Marie "..."
-    Marie ""
+    Marie "..."
 
 # game/script.rpy:170
 translate english follow_her_528e0885:
@@ -619,4 +619,3 @@ translate english strings:
     # game/script.rpy:209
     old "Ne les laisses pas faire ce qu'elles veulent !"
     new ""
-
