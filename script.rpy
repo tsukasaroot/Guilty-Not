@@ -98,8 +98,8 @@ label begin:
             jump Marie_path
         "Continuer à observer":
             $inactive=1
-    girl1 "Ben alors, t'as perdu ta langue ?"
-    girl2 "En plus d'être grosse tu sais plus parler ?"
+    Girl1 "Ben alors, t'as perdu ta langue ?"
+    Girl2 "En plus d'être grosse tu sais plus parler ?"
     "Encore une fois, elles se mettent à rire..."
     "L'une d'elle se met à tapoter de plus en plus fort l'épaule de Marie."
     "..."
