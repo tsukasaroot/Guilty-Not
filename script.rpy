@@ -8,9 +8,9 @@ define Groupe = Character("Groupe")
 
 define audio.hero = [ "<loop 1>" "sounds/Heros.mp3" ]
 define audio.homering = "sounds/homering.wav"
-define audio.everydaylife = [ "<loop 1>" "sounds/everydaylife.mp3" ]
-define audio.schoolring = [ "<loop 0>" "sounds/schoolring.mp3" ]
-define audio.lycee = [ "<from 1 to 4>" "sounds/lyceetheme.mp3" ]
+define audio.everydaylife = [ "<loop 0>" "sounds/everydaylife.mp3" ]
+define audio.schoolring = [ "<from 1 to 4>" "sounds/schoolring.mp3" ]
+define audio.lycee = [ "<loop 0>" "sounds/lyceetheme.mp3" ]
 define audio.doorknock = [ "<from 1.0 to 9.0>" "sounds/door knock.wav" ]
 define audio.suicidal = [ "<loop 6>" "sounds/suicidal.mp3" ]
 
@@ -20,7 +20,6 @@ label initialize:
     if not MCname:
         $MCname = "Jassy"
     $friend = 0
-    $inactive = 0
     jump begin
 
 image splash:
@@ -31,7 +30,7 @@ image splash:
 label splashscreen:
     scene black
     with Pause(1)
-    show text "Cancercorp vous présente..." with dissolve
+    show text "DotHackers vous présente..." with dissolve
     with Pause(1)
     show splash with dissolve
     with Pause(2)
@@ -73,7 +72,8 @@ label begin:
     #voice "p4"
     "L'une d'elles en particulier, retient mon attention."
     #voice "p5"
-    show marie normal at left
+    show marie normal:
+        xalign 0.3 yalign 0.9
     "Tiens ? Sa tête me dit quelque chose... ça ne serai pas Marie ? On habitait a côté quand on était petites je crois."
     #voice "p6"
     "Quand aux autres filles, je ne les reconnait pas. Elles ont l'air agitées, je me demande ce qu'elles lui veulent... "
@@ -81,7 +81,8 @@ label begin:
     "Je décide donc de m'approcher."
     scene black with dissolve
     scene bg lycee
-    show marie normal at left
+    show marie normal:
+        xalign 0.9 yalign 0.9
     #voice "p8"
     Girl1 "Alors ? Tu me les donnes ces 20 euros ? Ou tu comptes tout dépenser ce midi pour t'empiffrer ?"
     #voice "p9"
@@ -97,7 +98,7 @@ label begin:
         "Tenter de s'interposer":
             jump Marie_path
         "Continuer à observer":
-            $inactive=1
+            $friend-=1
     Girl1 "Ben alors, t'as perdu ta langue ?"
     Girl2 "En plus d'être grosse tu sais plus parler ?"
     "Encore une fois, elles se mettent à rire..."
@@ -160,7 +161,8 @@ label Marie_path:
     jump back_class
 
 label follow_her:
-    show marie normal at left
+    show marie normal:
+        xalign 0.9 yalign 0.9
     "En arrivant dans l'arrière cours, Marie se retourna. l'air effayée."
     Marie "Ex-excuse moi, tu peux me laisser ? Je préfère rester seule."
     MC "Je voulais juste qu'on discute un peu, après ce qu'il s'est passé ce matin..."
@@ -184,7 +186,8 @@ label back_class:
     "Pendant ma balade digestive dans l'enceinte du lycée, j'entends des voix provenant de derrière un pilier."
     "Je prends le risque de m'approcher..."
     "... Comme je pensais, cette voix me disait quelque chose. C'est Marie, entourée par le groupe de ce matin."
-    show marie tear 2 at left
+    show marie tear 2:
+        xalign 0.9 yalign 0.9
     "Son visage semble impassible, mais en l'observant attentivement, je remarque une larme qui coule sur sa joue."
     "L'une des filles remarque ma présence."
     Girl3 "Encore toi ? Qu'est-ce que tu nous veux ?"
@@ -200,7 +203,8 @@ label back_class:
     scene bg classroom
     "En arrivant devant la salle de classe, Marie retira brusqement sa main."
     "Elle rentre dans la salle sans se retourner, j'ai cependant cru entendre un léger murmure..."
-    show marie normal
+    show marie normal:
+        xalign 0.9 yalign 0.9
     Marie "... Merci."
     menu:
         "Je suis là si tu veux en parler":
@@ -222,10 +226,10 @@ label back_class:
             MC "Essayons quand même."
             $friend-=1
     hide marie normal
-    scene black with dissolve
-    scene bg classroom with dissolve
     $renpy.sound.set_volume(0.6, channel='sound')
     play sound doorknock
+    scene black with dissolve
+    scene bg classroom with dissolve
     "*Toc toc*"
     pause(2)
     Prof "Bonjour."
