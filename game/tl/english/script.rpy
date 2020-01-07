@@ -274,127 +274,127 @@ translate english follow_her_752e87ac:
 translate english follow_her_528e0885:
 
     # "Elle semble se renfermer encore plus sur elle-même."
-    ""
+    "She seems to want being alone even more now."
 
 # game/script.rpy:171
 translate english follow_her_132d414c:
 
     # MC "Du coup, tu veux pas en parler ?"
-    MC ""
+    MC "So, don't wanna talk?"
 
 # game/script.rpy:172
 translate english follow_her_752e87ac_1:
 
     # Marie "..."
-    Marie ""
+    Marie "..."
 
 # game/script.rpy:173
 translate english follow_her_861998f8:
 
     # "Hum, j'ai l'impression que je m'y suis mal prise. Je ferai mieux de la laisser et d'aller manger."
-    ""
+    "Hmm, seems like I did wrong. I should better leave her and go eat."
 
 # game/script.rpy:174
 translate english follow_her_f31292a8:
 
     # MC "On se revoit en classe, à toute."
-    MC ""
+    MC "We see later, bye."
 
 # game/script.rpy:181
 translate english back_class_3a76711d:
 
     # "Au final, j'ai mangé avec un groupe composé de garçons et de filles."
-    ""
+    "Finally, I ate with a group of girls and guys."
 
 # game/script.rpy:182
 translate english back_class_0da03913:
 
     # MC "Ouf, j'ai trop mangé. Je vais marcher un peu pour digérer. A plus tard !"
-    MC ""
+    MC "Fiuu, I am full. Need to walk a bit. See you guys!"
 
 # game/script.rpy:183
 translate english back_class_dd021902:
 
     # Groupe "A toute !"
-    Groupe ""
+    Groupe "See you!"
 
 # game/script.rpy:186
 translate english back_class_2bd2f29e:
 
     # "Pendant ma balade digestive dans l'enceinte du lycée, j'entends des voix provenant de derrière un pilier."
-    ""
+    "While I was walking in the court, I heard some noises from behind a pillar."
 
 # game/script.rpy:187
 translate english back_class_375b4bf3:
 
     # "Je prends le risque de m'approcher..."
-    ""
+    "Wondering what is happening, I go closer..."
 
 # game/script.rpy:188
 translate english back_class_c21296f3:
 
     # "... Comme je pensais, cette voix me disait quelque chose. C'est Marie, entourée par le groupe de ce matin."
-    ""
+    "...And as expected, I know this voice. It's Marie, with the girls from this morning all around her."
 
 # game/script.rpy:191
 translate english back_class_db218ef5:
 
     # "Son visage semble impassible, mais en l'observant attentivement, je remarque une larme qui coule sur sa joue."
-    ""
+    "Her face was closed, but looking more closely, I could notice a tear on her right cheek."
 
 # game/script.rpy:192
 translate english back_class_0668583e:
 
     # "L'une des filles remarque ma présence."
-    ""
+    "One of those girls notice me."
 
 # game/script.rpy:193
 translate english back_class_1d748262:
 
     # Girl3 "Encore toi ? Qu'est-ce que tu nous veux ?"
-    Girl3 ""
+    Girl3 "You again? Whaddya want?"
 
 # game/script.rpy:194
 translate english back_class_bc7fb6bc:
 
     # Girl2 "Ah je sais ! Tu vas payer à sa place !"
-    Girl2 ""
+    Girl2 "Ah I know! Finally you'll pay for her!"
 
 # game/script.rpy:195
 translate english back_class_13d1e201:
 
     # Girl1 "Allez raboule l'argent."
-    Girl1 ""
+    Girl1 "Then give us the money, bitch."
 
 # game/script.rpy:196
 translate english back_class_5aeefa6d:
 
     # MC "Arrêtez ça ! Sinon je vais devoir en parler à un professeur."
-    MC ""
+    MC "Stop it! Else I'll have to report you all."
 
 # game/script.rpy:197
 translate english back_class_2a0979a6:
 
     # Girl1 "Haha, c'est quoi cette chouineuse ?"
-    Girl1 ""
+    Girl1 "Ahah, who's this donkey?"
 
 # game/script.rpy:199
 translate english back_class_3c2a5c6d:
 
     # "Je prends Marie par la main, puis la tire en direction de notre classe."
-    ""
+    "I take Marie's hand, then pull her to the classroom."
 
 # game/script.rpy:200
 translate english back_class_9755c28a:
 
     # Girl2 "C'est ça, enfuis-toi ! On se chargera de toi en même temps que ta grosse pote."
-    Girl2 ""
+    Girl2 "Sure, go away looser! We will take care of you at same time as your whale friend."
 
 # game/script.rpy:201
 translate english back_class_44d86898:
 
     # Girl3 "On verra si tu protègeras cette baleine pour longtemps !"
-    Girl3 ""
+    Girl3 "We will see if you will protect her any longer!"
 
 # game/script.rpy:204
 translate english back_class_8547fd43:
